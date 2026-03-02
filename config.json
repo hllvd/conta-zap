@@ -1,0 +1,38 @@
+{
+  "App": {
+    "Name": "ContaZap",
+    "Version": "1.0.0",
+    "Environment": "development"
+  },
+  "Database": {
+    "Provider": "sqlite",
+    "ConnectionString": "Data Source=/data/contazap.db"
+  },
+  "Jwt": {
+    "SecretKey": "7FYShFW2Y3d/2+9QQVa9edGS2rwNcRUHTA8C+7FdfG0=",
+    "Issuer": "contazap-api",
+    "Audience": "contazap-admin",
+    "ExpiryMinutes": 60,
+    "RefreshExpiryDays": 7
+  },
+  "SuperAdmin": {
+    "Email": "superadmin@test.com",
+    "Password": "string"
+  },
+  "Webhook": {
+    "Secret": "CHANGE_THIS_WEBHOOK_SECRET"
+  },
+  "GoogleSheets": {
+    "ServiceAccountKeyPath": "/app/secrets/service-account.json",
+    "SharedFolderId": ""
+  },
+  "Cors": {
+    "AllowedOrigins": [ "http://localhost:3000", "https://admin.contazap.com" ]
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}
